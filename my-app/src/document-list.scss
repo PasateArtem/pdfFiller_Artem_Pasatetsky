@@ -1,0 +1,64 @@
+@import './button.scss';
+
+$gray-600: #6B6B6B;
+$gray-100: #d4d4d4;
+
+.document__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    min-width: 600px;
+    &.mobile {
+        max-width: 320px;
+        min-width: auto;
+        width: 100%;
+        .btn {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .item__content  {
+            &-description {
+                margin-right: 0;
+            }
+        }
+    }
+    &-item {
+        border: 1px solid $gray-100;
+        border-bottom: none;
+        list-style-type: none;
+        &:last-child {
+            border-bottom: 1px solid $gray-100;
+        }
+       
+    }
+    .item__content {
+        display: flex;
+        align-items: center;
+        &-image {
+            margin-right: 14px;
+        }
+        &-description {
+            margin-right: 25px;
+            h5 {
+                margin: 0;
+                font-size: 14px;
+            }
+            p {
+                margin: 0;
+                color: $gray-600;
+                font-size: 14px;
+            }
+        }
+    }
+    .btn {
+        margin: 0;
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 16px 24px;
+    }
+}

@@ -1,0 +1,62 @@
+$white: #fff;
+$gray: #BFBFBF;
+$dark-gray: #414141;
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 7px 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    transition: 0.3s;
+    max-width: 120px;
+    width: 100%;
+    margin: 6px 16px;
+    &-orange {
+        background: linear-gradient(180deg, #FFAE45 0%, #E88300 100%);
+        border: 1px solid #E88300;
+        color: $white;
+        &:hover {
+            background: #FFA42E;
+        }
+        &:active {
+            background: linear-gradient(180deg, #E88300 0%, #FFAE45 100%);
+        }
+        &:disabled {
+            background: #FFD8A5;
+            border: 1px solid #FFB85C;
+        }
+        &:focus {
+            background: #FFA42E;
+            box-shadow: 0px 0px 4px #E88300;
+        }
+    }
+    &-gray {
+        background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+        border: 1px solid #BFBFBF;
+        color: $dark-gray;
+        &:hover {
+            background: #F5F5F5;
+        }
+        &:active {
+            background: linear-gradient(180deg, #E9E9E9 0%, #F5F5F5 100%);
+        }
+        &:disabled {
+            background: #F9F9F9;
+        }
+        &:focus {
+            background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+            box-shadow: 0px 0px 4px #BFBFBF;
+        }
+    }
+}
